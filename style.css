@@ -717,14 +717,14 @@ p {
     margin: 15px ;
 }
 
-h2 {
+h2, h4 {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
 }
 
-h3 {
+h3, h5 {
     font-size: 22px;
     line-height: 1.4em;
     color: white;
@@ -737,10 +737,6 @@ h3 {
 }
 
 h1 {
-    color: #333333!important;
-}
-
-h4 {
     color: #333333!important;
 }
 
@@ -906,13 +902,13 @@ img[src="img/logo.webp"]{
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -930,10 +926,7 @@ img[src="img/logo.webp"]{
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
+    
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -942,8 +935,6 @@ img[src="img/logo.webp"]{
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
